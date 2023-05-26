@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="./bootstrap/bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <title>Admin Login page</title>
+</head>
+<style>
+    .Box {
+        box-shadow: 0px 0px 10px 0px rgb(1, 128, 255);
+    }
+    
+    .Image {
+        width: 300px;
+        height: 300px;
+        /* box-shadow: 0px 0px 10px 0px rgb(144, 148, 218); */
+    }
+    
+    .login-button {
+        width: 300px;
+        height: 50px;
+    }
+    /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+    /* Portrait and Landscape */
+    
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px)and (-webkit-min-device-pixel-ratio: 2) {
+        .Image {
+            width: 250px;
+            height: 350px;
+            /* box-shadow: 0px 0px 10px 0px rgb(144, 148, 218); */
+        }
+        .signupText {
+            font-size: 30px;
+        }
+        .signupSubtext {
+            font-size: 14px;
+            margin-top: 5px;
+            /* margin-bottom: 6px; */
+        }
+        .loginButn {
+            margin-top: 6px;
+            margin-bottom: 5px;
+            width: 80px;
+            height: 35px;
+        }
+        .login-button {
+            width: 250px;
+            height: 50px;
+        }
+        .abc {
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    
+    body {
+        background-image: linear-gradient(transparent, rgba(42, 190, 235, 0.707)), url(https://www.indifi.com/blog/wp-content/uploads/2020/10/Marketing-Strategies-for-Courier-Companies.jpeg);
+        /* background-color: blueviolet; */
+        background-size: 100%;
+        background-repeat: no-repeat;
+        /* background-position: top right; */
+        /* background-position: cent; */
+        background-attachment: fixed;
+        padding: 30px;
+        /* background-position: ; */
+    }
+</style>
+
+
+<body>
+    <div class="container ">
+        <!-- <div class="d-flex flex-row-reverse">
+                <p class="">a</p>
+                <p class="">b</p>
+            </div> -->
+        <div align="center">
+            <h1 class="card-title mb-2 text-dark signupText mt-4">Login</h1>
+        </div>
+        <div align="right">
+            <form action="/go_user" method="post">
+                <button class="btn btn-info btn-md">Login as user</button>
+            </form>
+        </div>
+        <form action="/admin" method="post">
+            <div class="row card border-0 justify-content-center align-items-center p-5 mt-5 bg-info">
+                <div class="col-lg-8 col-md-8 card-body bg-white Box d-lg-flex ">
+                    <div class="me-5">
+                        <img class="Image" src="https://img.freepik.com/free-vector/courier-carrying-order-illustration_335657-479.jpg?w=2000" alt="LoginPic">
+                    </div>
+                    <div class="">
+                        <div class="col-12">
+
+                            <div class="form-floating mb-3">
+                                <input class="form-control" type="email" placeholder="Email">
+                                <label class="form-label " for="">Email</label>
+                            </div>
+                            <div class="form-floating">
+                                <input class="form-control" type="password" placeholder="Password">
+                                <label class="form-label" for="">Password</label>
+                            </div>
+
+                        </div>
+
+                        <div class="mt-5 ">
+                            <button class="btn btn-lg btn-info mb-2 login-button">Login</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
